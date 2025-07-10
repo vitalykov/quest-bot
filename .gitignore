@@ -1,0 +1,12 @@
+# Python venv files
+.venv
+__pycache__
+
+# PyCharms files
+.idea
+
+# .env file with personal data
+.env
+
+# Database file
+db/quest.db
