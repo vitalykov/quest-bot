@@ -15,6 +15,7 @@ import db.players
 import db.tasks
 
 __all__ = [
+    'initialize_data',
     'admins_dict',
     'team_id_from_admin',
     'teams_dict',
@@ -68,6 +69,3 @@ async def initialize_data() -> None:
     await initialize_task_list()
     await initialize_players_dict()
     await initialize_teams_dict()
-
-
-asyncio.run(initialize_data())

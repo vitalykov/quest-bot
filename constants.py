@@ -6,11 +6,12 @@ import os
 
 __all__ = [
     'TOKEN',
-    'ADMIN_SET',
-    'DB_FILE',
     'BOT_ADMIN_ID',
     'TEAM_1_CURATOR_ID',
-    'TEAM_2_CURATOR_ID'
+    'TEAM_2_CURATOR_ID',
+    'ADMIN_SET',
+    'DB_FILE',
+    'DB_TABLES_SCRIPT'
 ]
 
 load_dotenv()
@@ -24,5 +25,6 @@ TEAM_1_CURATOR_ID = int(os.getenv("TEAM_1_CURATOR_ID"))
 TEAM_2_CURATOR_ID = int(os.getenv("TEAM_2_CURATOR_ID"))
 ADMIN_SET = {BOT_ADMIN_ID, TEAM_1_CURATOR_ID, TEAM_2_CURATOR_ID}
 
-# Database file for the Quest bot
+# Database files for the Quest bot
 DB_FILE = 'db/quest.db'
+DB_TABLES_SCRIPT = 'db/tables.sql'
